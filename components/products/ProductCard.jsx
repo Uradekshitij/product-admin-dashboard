@@ -25,8 +25,8 @@ export default function ProductCard({ product, onDelete }) {
         </div>
 
         <div className="mt-2 flex gap-4">
-          <Link href={`/products/${product.id}?edit=1`} className="text-xs font-medium text-brand-600">
-            Edit
+          <Link href={`/products/${product.id}`} className="text-xs font-medium text-brand-600">
+            View
           </Link>
           <button type="button" onClick={() => onDelete(product)} className="text-xs font-medium text-red-600">
             Delete
